@@ -1,0 +1,12 @@
+###Script for timelocked 3 of 3 multisig###
+OP_IF 
+
+    <epochSize> OP_CHECKSEQUENCEVERIFY OP_DROP
+    OP_3 <pubKeyA> <pubKeyT> <pubKeyB> OP_3 OP_CHECKMULTISIG 
+
+OP_ELSE
+
+    <epochSize + redeemSize> OP_CHECKSEQUENCEVERIFY OP_DROP
+    <pubKeyB> OP_CHECKSIGNATURE
+
+OP_ENDIF
