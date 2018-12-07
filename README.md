@@ -7,3 +7,7 @@ Background/Motivation: Cryptocurrency exchanges are services where traders can b
 
 Description of Files:
 
+1) Example Bitcoin Script for timelocked 3 of 3 Multisig
+2) Tesseract Smart Contract (Solidity)
+3) Tesseract Server and Example Clients (Rust)
+4) Project Whitepaper
